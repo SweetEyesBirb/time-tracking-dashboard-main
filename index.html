@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+</head>
+
+<body>
+  <div class="cards-container">
+
+    <div class="profile-card-container card ">
+
+      <div class="profile">
+
+        <div class="img-wrapper">
+          <img src="images/image-jeremy.png" alt="Jeremy's image">
+        </div>
+
+        <header id="header">
+          <h4>Report for</h4>
+          <h1 class="name">Jeremy Robson</h1>
+        </header>
+
+      </div>
+
+      <div class="options-container">
+        <div class="options">
+          <ul>
+            <li>
+              <a class="tab active" href="index.html">Daily</a>
+            </li>
+            <li>
+              <a class="tab" href="weekly.html">Weekly</a>
+            </li>
+            <li>
+              <a class="tab" href="monthly.html">Monthly</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="work-card-container card top-cards">
+      <div class="color-box work-color"></div>
+      <div class="info">
+        <div class="activity-header">
+          <h2 class="work-title"><!-- Work --></h2> 
+          <div class="more-menu">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+        <div class="hours">
+          <h1 id="work-daily-current"><!-- 5hrs --></h1> <!-- daily -->
+          <h3 id="work-daily-previous"><!-- Yesterday - 7hrs --></h3> <!-- daily -->
+        </div>
+      </div>
+    </div>
+
+    <div class="play-card-container card top-cards">
+      <div class="color-box play-color"></div>
+      <div class="info">
+        <div class="activity-header">
+          <h2 class="play-title"><!-- Play --></h2>
+          <div class="more-menu">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+        <div class="hours">
+          <h1 id="play-daily-current"><!-- 1hr --></h1> <!-- daily -->
+          <h3 id="play-daily-previous"><!-- Yesterday - 2hrs --></h3> <!-- daily -->
+        </div>
+      </div>
+    </div>
+
+    <div class="study-card-contaier card top-cards">
+      <div class="color-box study-color"></div>
+      <div class="info">
+        <div class="activity-header">
+          <h2 class="study-title"><!-- Study --></h2>
+          <div class="more-menu">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+        <div class="hours">
+          <h1 id="study-daily-current"><!-- 0hrs --></h1> <!-- daily -->
+          <h3 id="study-daily-previous"><!-- Yesterday - 1hr --></h3> <!-- daily -->
+        </div>
+      </div>
+    </div>
+
+    <div class="exercise-card-container card bottom-cards">
+      <div class="color-box exercise-color"></div>
+      <div class="info">
+        <div class="activity-header">
+          <h2 class="exercise-title"><!-- Exercise --></h2>
+          <div class="more-menu">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+        <div class="hours">
+          <h1 id="exercise-daily-current"><!-- 1hr --></h1> <!-- daily -->
+          <h3 id="exercise-daily-previous"><!-- Yesterday - 1hr --></h3> <!-- daily -->
+        </div>
+      </div>
+    </div>
+
+    <div class="social-card-container card bottom-cards">
+      <div class="color-box social-color"></div>
+      <div class="info">
+        <div class="activity-header">
+          <h2 class="social-title"><!-- Social --></h2>
+          <div class="more-menu">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+        <div class="hours">
+          <h1 id="social-daily-current"><!-- 1hr --></h1> <!-- daily -->
+          <h3 id="social-daily-previous"><!-- Yesterday - 3hrs --></h3> <!-- daily -->
+        </div>
+      </div>
+    </div>
+
+    <div class="self-care-card-container card bottom-cards">
+      <div class="color-box self-care-color"></div>
+      <div class="info">
+        <div class="activity-header">
+          <h2 class="self-care-title"><!-- Self Care --></h2>
+          <div class="more-menu">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+        <div class="hours">
+          <h1 id="self-care-daily-current">0hrs</h1> <!-- daily -->
+          <h3 id="self-care-daily-previous">Yesterday - 1hr</h3> <!-- daily -->
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/">sweetEyesBirb</a>.
+  </div>
+
+  <script src="index.js"></script>
+  <script src="daily.js"></script>
+</body>
+
+</html>

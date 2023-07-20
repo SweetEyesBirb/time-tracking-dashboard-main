@@ -1,0 +1,371 @@
+  @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+ 
+ :root {
+    --background-color: hsl(226, 43%, 10%);
+    --hover-color: rgba(255, 255, 255, 0.7);
+ }
+ 
+  /* reset */
+  * {
+      position: relative;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Rubik", sans-serif;
+      width: 100%;
+      color: #fff;
+      border-radius: 20px;
+  }
+
+
+  body {
+      min-height: 100%;
+      background-color: var(--background-color);
+      /* why would the attribution leave the bottom if there is no solid border here? */
+      border: solid var(--background-color);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+      font-weight: 300;
+  }
+
+  /* cards grid */
+  .cards-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 20px;
+      /* Center the container horizontally */
+      margin: 10% auto;
+      width: 80%;
+      height: fit-content;
+  }
+
+  .card {
+      /* max-width: 250px; creates a default gap */
+      height: 250px;
+  }
+
+  /* user's profile */
+  .profile-card-container {
+      /* starting row / ending row */
+      grid-row: span 2;
+      /* max-width: 250px; also creates a default gap */
+      min-height: fit-content;
+      /* fits the 2 containers into the grid spanning on y axis */
+      height: 100%;
+  }
+
+  .profile {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      background-color: hsl(246, 80%, 60%);
+      padding: 0% 20% 20% 10%;
+      z-index: 1;
+      /* The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others). */
+      height: 65%;
+  }
+
+  #header h4 {
+      color: hsl(236, 100%, 87%);
+      font-weight: bold;
+  }
+
+  .profile h1 {
+      word-wrap: break-word;
+      color: rgba(255, 255, 255, 0.9);
+  }
+
+  img {
+      border: 2px solid aliceblue;
+      border-radius: 50%;
+      max-width: 40%;
+  }
+
+  .img-wrapper {
+      width: fit-content;
+  }
+
+  img:hover {
+      transform: scale(1.1);
+      transition-duration: 1s;
+      box-shadow: 0px 0px 20px 20px rgba(255, 255, 255, 0.3);
+  }
+
+  .options-container {
+      position: absolute;
+      background-color: hsl(235, 46%, 20%);
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      padding-top: 20px;
+      bottom: 0%;
+      height: 40%;
+  }
+
+  /* buttons */
+  ul {
+      background-color: transparent;
+      font-size: 100%;
+      margin: 10px 10%;
+      padding: 2px;
+      text-align: start;
+      width: fit-content;
+      border: transparent;
+      font-weight: bold;
+  }
+
+  .options {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+
+  ul {
+      /* Remove bullets */
+      list-style-type: none;
+  }
+
+  ul li {
+      margin: 15px 0;
+  }
+
+  ul a {
+      text-decoration: none;
+      color: hsl(235, 45%, 61%);
+  }
+
+  ul a:hover {
+      color: var(--hover-color);
+  }
+
+  a:active {
+      color: var(--hover-color);
+  }
+
+  .active {
+      color: var(--hover-color);
+  }
+
+  /* activity cards */
+  .info {
+      position: absolute;
+      background-color: hsl(235, 46%, 20%);
+      /* border-radius: 10px; */
+      padding: 10%;
+      height: 200px;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+
+  .info h1 {
+      font-size: min(2em);
+      font-size: max(3.5em);
+      word-wrap: break-word;
+  }
+
+  .info h3 {
+      font-size: 16px;
+      color: hsl(236, 100%, 87%);
+  }
+
+  .activity-header {
+      display: flex;
+      align-items: center;
+  }
+
+  /* more menu */
+  .more-menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      cursor: pointer;
+  }
+
+  .dot {
+      width: 4px;
+      height: 4px;
+      background-color: #fff;
+      border-radius: 50%;
+      margin: 2px;
+  }
+
+  .more-menu:hover {
+      transform: scale(1.5);
+      transition-duration: 0.6s;
+  }
+
+
+  /* colored boxes */
+  .color-box {
+      min-height: 150px;
+      /* border-radius: 10px; */
+      background-repeat: no-repeat;
+      background-position: 90% 0;
+  }
+
+  .work-color {
+      background-image: url("/images/icon-work.svg");
+      background-color: hsl(15, 100%, 70%);
+
+  }
+
+  .play-color {
+      background-image: url("images/icon-play.svg");
+      background-color: hsl(195, 74%, 62%);
+  }
+
+  .study-color {
+      background-image: url("/images/icon-study.svg");
+      background-color: hsl(348, 100%, 68%);
+  }
+
+  .exercise-color {
+      background-image: url("images/icon-exercise.svg");
+      background-color: hsl(145, 58%, 55%);
+  }
+
+  .social-color {
+      background-image: url("images/icon-social.svg");
+      background-color: hsl(264, 64%, 52%);
+  }
+
+  .self-care-color {
+      background-image: url("images/icon-self-care.svg");
+      background-color: hsl(43, 84%, 65%);
+  }
+
+
+  /* attribution */
+  .attribution {
+      position: absolute;
+      font-size: 11px;
+      text-align: center;
+      width: 100%;
+      bottom: 10px;
+  }
+
+  .attribution a {
+      color: hsl(228, 45%, 44%);
+  }
+
+
+
+  /* tablets and below */
+  @media (max-width: 1100px) {
+
+      /* trick to check the width rapidly
+    body {
+        display: none; 
+    }
+    */
+      .cards-container {
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(7, 1fr);
+      }
+
+      .profile {
+          flex-direction: row;
+          align-items: center;
+          height: fit-content + 50px;
+          padding: 20px;
+      }
+
+      .img-wrapper {
+          width: min(fit-content);
+      }
+
+      .options {
+          flex-direction: row;
+          justify-content: space-around;
+      }
+
+      .options ul {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+      }
+
+      li {
+          margin: 10px;
+          padding: 20px;
+          font-size: max(2em);
+      }
+
+      .options-container {
+          flex-direction: row;
+      }
+
+      .hours {
+          display: flex;
+          align-items: center;
+          margin-top: 10px;
+          justify-content: space-between;
+      }
+
+      .hours h3 {
+          text-align: end;
+          font-weight: bold;
+      }
+
+      .info h2 {
+          font-weight: bold;
+      }
+
+      .info {
+          justify-content: space-evenly;
+          padding: 5% 5%;
+      }
+
+  }
+
+  /* small screens */
+  @media (max-width: 490px) {
+
+      .cards-container {
+          width: 100%;
+      }
+
+      .profile {
+          flex-direction: column;
+      }
+
+      li {
+          font-size: 16px;
+          padding: 0;
+      }
+
+      .options {
+          justify-content: center;
+      }
+
+      .options ul {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+      }
+
+      .hours {
+          display: block;
+          margin: auto;
+      }
+
+      .hours h1 {
+          text-align: center;
+          font-size: 40px;
+      }
+
+      .hours h3 {
+          text-align: center;
+      }
+  }
