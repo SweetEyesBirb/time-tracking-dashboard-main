@@ -28,15 +28,6 @@ function main() {
     fetch("data.json")
         .then(response => response.json())
         .then(data => {
-            console.log(data[0].timeframes.daily.current);
-            console.log(data);
-
-            // const work = data.find(titleA => titleA.title == "Work");
-            // const play = data.find(titleB => titleB.title == "Play");
-            // const study = data.find(titleC => titleC.title == "Study");
-            // const exercise = data.find(titleD => titleD.title == "Exercise");
-            // const social = data.find(titleE => titleE.title == "Social");
-            // const selfCare = data.find(titleF => titleF.title == "Self Care");
 
             const lastWeek = "Last Week";
 
@@ -117,7 +108,6 @@ function main() {
             } else {
                 selfCarePreviousWeekly.textContent = `${lastWeek} ${data[5].timeframes.weekly.previous}hr`;
             }
-
 
         })
         .catch(error => {

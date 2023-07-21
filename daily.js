@@ -5,9 +5,6 @@ function main() {
     const workCurrentDaily = document.getElementById("work-daily-current");
     const workPreviousDaily = document.getElementById("work-daily-previous");
 
-    //const workCurrentWeekly = document.getElementById("work-weekly-current");
-    // const workPreviousWeekly = document.getElementById("work-weekly-previous");
-
     // play info cards
     const playCurrentDaily = document.getElementById("play-daily-current");
     const playPreviousDaily = document.getElementById("play-daily-previous");
@@ -122,7 +119,6 @@ function main() {
                 selfCarePreviousDaily.textContent = `${yesterday} ${selfCare.timeframes.daily.previous}hr`;
             }
 
-
         })
         .catch(error => {
             console.error(error);
@@ -131,59 +127,3 @@ function main() {
 }
 
 main();
-
-/* after console.log(data)
-data.forEach(object => {
-    const title = object.title;
-    const dailyCurrent = object.timeframes.daily.current;
-    const dailyPrevious = object.timeframes.daily.previous;
-    el.textContent = dailyCurrent;
-    console.log(dailyCurrent)
-}); */
-
-
-
-/*             const work = data.find(item => item.title == "Work");
-            const play = data.find(item => item.title == "Play");
-            el.textContent = work;
-
-            if (work) {
-                const workTimeframes = work.timeframes;
-                const dailyCurrentWorkValue = workTimeframes.daily.current;
-                const dailyPreviousWorkValue = workTimeframes.daily.previous;
-                const weeklyCurrentWorkvalue = workTimeframes.weekly.current;
-                const weeklyPreviousWorkValue = workTimeframes.weekly.previous;
-                const monthlyCurrentWorkValue = workTimeframes.monthly.current;
-                const monthlyPreviousWorkValue = workTimeframes.monthly.previous;
-
-                el.textContent = dailyCurrentWorkValue;
-                el.textContent = dailyPreviousWorkValue;
-                el.textContent = monthlyPreviousWorkValue;
-            }
-            else if (play) {
-                const playTimeframes = play.timeframes;
-                const dailyCurrentPlayValue = playTimeframes.daily.current;
-                const dailyPreviousPlayValue = playTimeframes.daily.previous;
-                const weeklyCurrentPlayvalue = playTimeframes.weekly.current;
-                const weeklyPreviousPlayValue = playTimeframes.weekly.previous;
-                const monthlyCurrentPlayValue = playTimeframes.monthly.current;
-                const monthlyPreviousPlayValue = playTimeframes.monthly.previous;
-                el.textContent = dailyCurrentPlayValue;
-                console.log(monthlyCurrentPlayValue)
-            } */
-
-
-/*
-const dailyCurrent = object.timeframes.daily.current;
-const dailyPrevious = object.timeframes.daily.previous;
-//el.textContent = dailyCurrent;
-console.log(dailyCurrent)
-
-if (title == "Work") {
-    console.log("Work");
-    // el.textContent = "Work";
-} else if (title == "Play") {
-    console.log("Play");
-    //el.textContent == "Play";
-}
-*/

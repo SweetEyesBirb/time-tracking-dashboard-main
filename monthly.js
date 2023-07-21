@@ -109,7 +109,6 @@ function main() {
                 selfCarePreviousMonthly.textContent = `${lastMonth} ${data[5].timeframes.monthly.previous}hr`;
             }
 
-
         })
         .catch(error => {
             console.error(error);

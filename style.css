@@ -209,7 +209,6 @@
   /* colored boxes */
   .color-box {
       min-height: 150px;
-      /* border-radius: 10px; */
       background-repeat: no-repeat;
       background-position: 90% 0;
   }
