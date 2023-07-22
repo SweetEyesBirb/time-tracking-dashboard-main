@@ -26,7 +26,7 @@ function main() {
     const selfCarePreviousDaily = document.getElementById("self-care-daily-previous");
 
 
-    fetch("data/data.json")
+    fetch("../data/data.json")
         .then(response => response.json())
         .then(data => {
 
