@@ -1,23 +1,6 @@
 
 function main() {
 
-    /*
-    // Get all the tab links
-    const tabLinks = document.querySelectorAll('.tab');
-
-    // Add click event listeners to each tab link
-    tabLinks.forEach(link => {
-        link.addEventListener('click', function (event) {
-            // event.preventDefault(); // Prevent the default link behavior
-
-            // Remove the "active" class from all tab links
-            tabLinks.forEach(tab => tab.classList.remove('active'));
-
-            // Add the "active" class to the clicked tab link
-            this.classList.add('active');
-        });
-    }); */
-
     // card headers
     const workHeader = document.querySelector(".work-title");
     const playHeader = document.querySelector(".play-title");
