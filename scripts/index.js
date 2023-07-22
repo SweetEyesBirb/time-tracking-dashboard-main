@@ -9,8 +9,18 @@ function main() {
     const socialHeader = document.querySelector(".social-title");
     const selfCareHeader = document.querySelector(".self-care-title");
 
+    // Get the current page's path
+    const currentPagePath = window.location.pathname;
 
-    fetch("data/data.json" && "../data/data.json")
+    // Check if the current page is inside the 'pages' directory
+    const isInsidePagesDirectory = currentPagePath.includes('/pages/');
+
+    // Construct the correct relative path to data.json based on the current page
+    const dataJsonPath = isInsidePagesDirectory ? '../../data/data.json' : '../data/data.json';
+
+
+
+    fetch(dataJsonPath)
         .then(response => response.json())
         .then(data => {
             console.log(data);
@@ -31,7 +41,7 @@ function main() {
 
         })
         .catch(error => {
-            console.error(error);
+            console.error('Error fetching data:', error);
         })
 }
 
