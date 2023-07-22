@@ -16,7 +16,7 @@ function main() {
     const isInsidePagesDirectory = currentPagePath.includes('/pages/');
 
     // Construct the correct relative path to data.json based on the current page
-    const dataJsonPath = isInsidePagesDirectory ? '../../data/data.json' : '../data/data.json';
+    const dataJsonPath = isInsidePagesDirectory ? '../data/data.json' : 'data/data.json';
 
 
 
