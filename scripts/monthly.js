@@ -25,7 +25,7 @@ function main() {
     const selfCarePreviousMonthly = document.getElementById("self-care-monthly-previous");
 
 
-    fetch("data.json")
+    fetch("../data/data.json")
         .then(response => response.json())
         .then(data => {
 

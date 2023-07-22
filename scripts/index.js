@@ -27,7 +27,7 @@ function main() {
     const selfCareHeader = document.querySelector(".self-care-title");
 
 
-    fetch("data.json")
+    fetch("../data/data.json")
         .then(response => response.json())
         .then(data => {
             console.log(data);

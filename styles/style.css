@@ -1,4 +1,5 @@
   @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+  
 
  
  :root {
@@ -79,6 +80,7 @@
   .profile h1 {
       word-wrap: break-word;
       color: rgba(255, 255, 255, 0.9);
+      font-weight: 600;
   }
 
   img {
@@ -138,6 +140,7 @@
   ul a {
       text-decoration: none;
       color: hsl(235, 45%, 61%);
+      font-weight: 600;
   }
 
   ul a:hover {
@@ -156,7 +159,6 @@
   .info {
       position: absolute;
       background-color: hsl(235, 46%, 20%);
-      /* border-radius: 10px; */
       padding: 10%;
       height: 200px;
       bottom: 0;
@@ -165,15 +167,25 @@
       justify-content: space-between;
   }
 
+  .info:hover {
+    background-color: hsl(235, 46%, 50%);
+
+  }
+
   .info h1 {
       font-size: min(2em);
       font-size: max(3.5em);
       word-wrap: break-word;
   }
 
+  .info h2 {
+    font-weight: bold;
+  }
+
   .info h3 {
       font-size: 16px;
       color: hsl(236, 100%, 87%);
+      font-weight: bold;
   }
 
   .activity-header {
@@ -214,33 +226,33 @@
   }
 
   .work-color {
-      background-image: url("/images/icon-work.svg");
+      background-image: url("../images/icon-work.svg");
       background-color: hsl(15, 100%, 70%);
 
   }
 
   .play-color {
-      background-image: url("images/icon-play.svg");
+      background-image: url("../images/icon-play.svg");
       background-color: hsl(195, 74%, 62%);
   }
 
   .study-color {
-      background-image: url("/images/icon-study.svg");
+      background-image: url("../images/icon-study.svg");
       background-color: hsl(348, 100%, 68%);
   }
 
   .exercise-color {
-      background-image: url("images/icon-exercise.svg");
+      background-image: url("../images/icon-exercise.svg");
       background-color: hsl(145, 58%, 55%);
   }
 
   .social-color {
-      background-image: url("images/icon-social.svg");
+      background-image: url("../images/icon-social.svg");
       background-color: hsl(264, 64%, 52%);
   }
 
   .self-care-color {
-      background-image: url("images/icon-self-care.svg");
+      background-image: url("../images/icon-self-care.svg");
       background-color: hsl(43, 84%, 65%);
   }
 
